@@ -1,0 +1,46 @@
+
+<H1>Editing Employees</H1>
+
+<h3>
+    <br />
+    • Name should be a minimum of 5 characters.
+    <br />
+    • Role should be Manager or Employee.
+    <br />
+    • Salary should be > 0.
+    <br />
+</h3>
+
+<form action="/employees/edit/<%=employee.eid %>" method="POST">
+
+    <h2>Edit chosen Employee</h2>
+
+    <br /><br />
+
+    <label>Name</label>
+    <input type="text" name="ename" maxlength="5" required>
+
+    <br /><br />
+
+    <label for="role">Role:</label>
+    <select id="role" name="role" required>
+        <option value="Manager">Manager</option>
+        <option value="Employee">Employee</option>
+    </select>
+    <br /><br />
+
+    <label>Salary</label>
+    <input type="number" name="salary" min="1" required>
+
+    <br /><br />
+
+    <button type="submit">submit</button>
+
+</form>
+
+
+
+
+<button>
+    <a href="http://localhost:3000/"> MainPage </a>
+</button>

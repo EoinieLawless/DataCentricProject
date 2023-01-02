@@ -1,0 +1,37 @@
+<h1>EmployeesMongo</h1>
+
+<br />
+
+<button>
+    <a href="http://localhost:3000/employeesMongo/employeesMongoAdd">Add employees(Mongo)</a>
+</button>
+
+<br /><br />
+<table border="1 solid black">
+    <tr>
+        <th>eid</th>
+        <th>phone</th>
+        <th>email</th>
+    </tr>
+    <tr>
+    </tr>
+
+    <% for(let empMongo of employeesMongo){%>
+            </tr>
+            <td>
+                <%=empMongo._id %>
+            </td>
+            <td>
+                <%=empMongo.phone %>
+            </td>
+            <td>
+                <%=empMongo.email %>
+            </td>
+            </tr> <% }%>
+</table>
+
+<br/><br/>
+
+<button>
+    <a href="http://localhost:3000/"> MainPage </a>
+</button>
